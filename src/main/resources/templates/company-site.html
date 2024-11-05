@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Virksomhedsside</title>
+    <link rel="stylesheet" href="companyCSS.css">
 </head>
 <body>
-hej
+
+<!-- Log ud button in top left corner -->
+<a href="/">
+    <button class="logud-btn">Log ud</button>
+</a>
+
+<div class="container">
+    <!-- Venstre sektion -->
+    <div class="left-section">
+        <div class="welcome-box">
+            <h2>Velkommen, Netto Frederiksberg</h2>
+            <p>Falkoner Allé 1, 2000</p>
+            <p>Butik #3214</p>
+        </div>
+
+        <div class="statistics-box">
+            <img src="https://www.officekursus.dk/wp-content/uploads/elementor/thumbs/Skaermbillede-2024-02-29-kl.-15.18.15-qkiydoioouolf3m6rqv6hylr4wanrp4qnhsd6j3n3s.png" alt="Statistik Billede">
+        </div>
+
+        <div class="sales-info">
+            <p>Du har solgt 5 datovarer i perioden: 06-11-24 - i dag.</p>
+            <p>Du har været med til at redde 2 ton CO2 ved at hjælpe med at bekæmpe madspild!</p>
+        </div>
+    </div>
+
+    <!-- Højre sektion -->
+    <div class="right-section">
+
+        <a href="createProduct">
+            <button class="function-btn">Opret ny datovare</button>
+        </a>
+
+        <button class="function-btn">Se varehistorik</button>
+        <button class="function-btn">Se statistik af varesalg</button>
+        <button class="function-btn">Slet vare</button>
+        <button class="function-btn">Se kundefeedback</button>
+    </div>
+</div>
 </body>
 </html>

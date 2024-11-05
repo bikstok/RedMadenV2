@@ -1,0 +1,82 @@
+/* Global styling for the login page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the login container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the form labels and inputs */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Links for 'Glemt adgangskode?' and 'AzureID' below the form but above the submit button */
+.links {
+    display: flex;
+    justify-content: space-between; /* Space the links out */
+    gap: 50px; /* Space between the links */
+    font-size: 12px; /* Smaller text size */
+    color: #333;
+    margin-bottom: 50px; /* Added more space between the links and the submit button */
+}
+
+.links a {
+    text-decoration: underline;
+    color: #333;
+}
+
+.links a:hover {
+    text-decoration: none;
+}
+
+/* Submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -7,6 +7,8 @@ public class DatoVare {
 
     private double price;
 
+    private double originalPrice;
+
     private int expirationDays;
 
     private String location;
@@ -19,9 +21,10 @@ public class DatoVare {
 
     }
 
-    public DatoVare(String name, double price, int expirationDays, String location, String storeName, String category) {
+    public DatoVare(String name, double price, double originalPrice, int expirationDays, String location, String storeName, String category) {
         this.name = name;
         this.price = price;
+        this.originalPrice = originalPrice;
         this.expirationDays = expirationDays;
         this.location = location;
         this.storeName = storeName;
@@ -42,6 +45,14 @@ public class DatoVare {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setOriginalPrice(double originalPrice){
+        this.originalPrice = originalPrice;
+    }
+
+    public double getOriginalPrice() {
+        return this.originalPrice;
     }
 
     public int getExpirationDays() {

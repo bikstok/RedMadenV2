@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Opret datovare</title>
+    <link rel="stylesheet" href="createProductCSS.css">
+</head>
+<body>
+<h1>Opret datovare</h1>
+
+<!-- Tilbage til forsiden knap -->
+<a href="/company-site">
+    <button class="back-btn">Tilbage til forsiden</button>
+</a>
+
+<div class="opret">
+    <form action="">
+        <label>Indtast navn på varen</label>
+        <input type="text" name="name">
+
+        <label>Indtast originale pris på varen</label>
+        <input type="text" name="originalPrice">
+
+        <label>Indtast nedsatte pris på varen</label>
+        <input type="text" name="price">
+
+        <label>Indtast antal dage før varen udløber</label>
+        <input type="text" name="expirationDays">
+
+        <label>Vælg kategori</label>
+        <select name="Kategori" required>
+            <option value="frugt-gront">Frugt og grønt</option>
+            <option value="mejeri">Mejeri</option>
+            <option value="kod-palaeg">Kød og pålæg</option>
+        </select>
+
+        <label>Upload billede af varen</label>
+        <input type="file" name="productImage" accept="image/*" required>
+
+        <input type="submit" value="Opret datovare">
+    </form>
+</div>
+</body>
+</html>
