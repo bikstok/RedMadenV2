@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Donationsoverblik - Danmark mod Madspild</title>
+    <link rel="stylesheet" href="donationOrg.css">
+</head>
+<body>
+
+<!--Fører tilbage til dashboardet -->
+<a href="org-site">
+    <button class="logud-btn">Tilbage til Dashboard</button>
+</a>
+
+
+<!-- Overskriften står i midten-->
+<header class="centered-header">
+    <h1>Donationsoverblik</h1>
+    <p>Få et klart overblik over modtagne donationer og deres indvirkning.</p>
+</header>
+
+<!-- Total Donations Box -->
+<div class="total-donations-box">
+    <h2>Total Donationer</h2>
+    <p>DKK 125,000</p>
+    <p>Samlet donation modtaget i år</p>
+</div>
+
+<!-- Donations Table -->
+<div class="donations-table">
+    <h2>Donationer</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Donor</th>
+            <th>Beløb (DKK)</th>
+            <th>Dato</th>
+            <th>Formål</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Marie Jensen</td>
+            <td>5.000</td>
+            <td>2024-10-15</td>
+            <td>Generel Støtte</td>
+        </tr>
+        <tr>
+            <td>Erik Hansen</td>
+            <td>10.000</td>
+            <td>2024-09-20</td>
+            <td>Madspildsprojekt</td>
+        </tr>
+        <tr>
+            <td>Anonymous</td>
+            <td>15.000</td>
+            <td>2024-08-30</td>
+            <td>Generel Støtte</td>
+        </tr>
+        <tr>
+            <td>Anne Krog</td>
+            <td>8.000</td>
+            <td>2024-08-31</td>
+            <td>Madbank Initiativ</td>
+        </tr>
+        <tr>
+            <td>Virksomhed XYZ</td>
+            <td>20.000</td>
+            <td>2024-06-05</td>
+            <td>Specifikt Formål</td>
+        </tr>
+        <tr>
+            <td>Frederik Larsen</td>
+            <td>7.000</td>
+            <td>2024-08-31</td>
+            <td>Generel Støtte</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Export Data knap (ikke funktionel) -->
+<div class="export-button">
+    <button onclick="exportData()">Download Donationsdata (CSV)</button>
+</div>
+</body>
+</html>
