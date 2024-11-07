@@ -1,3 +1,107 @@
-body{
-    background-color: purple;
+/* Styling for Log ud knap */
+.logud-btn {
+    background-color: #ccc; /* Lys grå baggrund */
+    color: white;
+    padding: 8px 16px; /* Mindre padding */
+    font-size: 14px; /* Mindre fontstørrelse */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute; /* Absolut positionering */
+    top: 20px; /* Justér top position */
+    left: 20px; /* Justér venstre position */
+    z-index: 10; /* Sørger for, at knappen er over andet indhold */
+}
+
+.logud-btn:hover {
+    background-color: #aaa; /* Mørkere grå ved hover */
+}
+
+/* Grundlæggende styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f4; /* Lys grøn baggrund */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #2f855a; /* Mørkegrøn */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+    line-height: 1.4;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* Admin panel styling */
+.admin-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Individuel panel boks styling */
+.panel-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.panel-box h2 {
+    font-size: 22px;
+    color: #2f855a;
+    margin-bottom: 10px;
+}
+
+.panel-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Knapper inde i panel boks */
+.panel-button {
+    background-color: #48bb78; /* Grøn knapfarve */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.panel-button:hover {
+    background-color: #38a169; /* Mørkere grøn ved hover */
 }
