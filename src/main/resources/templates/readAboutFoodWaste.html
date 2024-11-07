@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Danmark mod Madspild - Navigation</title>
+    <link rel="stylesheet" href="readAbout.css">
 </head>
 <body>
-<h1> VÆRD AT VIDE</h1>
+
+<!-- Navigation Bar i toppen -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <img src="https://aios.horisontgruppen.dk/images/w3072/fc7b4f36-7ede-42c0-ba19-0fca976991fc.jpg" alt="Logo"> <!-- Placeholder til logo -->
+        <span>Danmark mod Madspild</span>
+    </div>
+    <!-- <li> tag bruges til at "list items", her gøres det vandret i navigations baren. -->
+    <ul class="navbar-links">
+        <li><a href="#">Støt Os</a></li>
+        <li><a href="#">Vores Arbejde</a></li>
+        <li><a href="#">Partnere</a></li>
+        <li><a href="#">FN's verdensmål</a></li>
+    </ul>
+
+    <!--Den lille lup er egentlig bare et billede som indsættes -->
+    <div class="navbar-search">
+        <input type="text" placeholder="Søg">
+        <button>🔍</button> <!-- Placeholder til søgeikon -->
+    </div>
+</nav>
+
+<!-- For at "Tilbage til forside" knappen ikke lægger oveni navigationsbaren indsættes det i en container -->
+<a href ="/">
+<div class="button-container">
+    <button class="logud-btn">Tilbage til forsiden</button>
+</div>
+</a>
+
+<!-- Madspild info Section -->
+<header class="madspild-section">
+    <div class="madspild-content">
+        <h1>Madspild i Danmark</h1>
+        <p>Sammen kan vi reducere madspild og gøre en forskel for miljøet og fremtidige generationer.</p>
+    </div>
+    <div class="madspild-image">
+        <img src="https://ultimatebeautyhealth.com/cdn/shop/articles/NO_Foods_Blog_Banner_1200x1200.png?v=1642354540" alt="Placeholder for madspild billede">
+    </div>
+</header>
+
+<!-- Info Boxes Section/samme layout
+ Læs mere knap ikke funktionel-->
+<section class="info-boxes">
+    <div class="info-box">
+        <h2>Undgå madspild - opskrifter</h2>
+        <img src="https://www.valdemarsro.dk/wp-content/2015/08/kylling-i-karry-opskrift.jpg" alt="Placeholder for opskrifter" class="info-box-img">
+        <p>Find lækre opskrifter, der hjælper dig med at få brugt dine rester og undgå madspild. Fra grøntsager til kød - få mest muligt ud af dine råvarer.</p>
+        <button>Læs mere</button>
+    </div>
+    <div class="info-box">
+        <h2>Vores Mission</h2>
+        <img src="https://img.freepik.com/premium-photo/smiling-girl-with-friends-fresh-vegetables-summer-fun_1294789-8224.jpg" alt="Placeholder for Vores Mission billede" class="info-box-img">
+        <p>Danmark mod Madspild arbejder for at oplyse om og bekæmpe madspild gennem kampagner, samarbejder og initiativer.</p>
+        <button>Læs mere</button>
+    </div>
+    <div class="info-box">
+        <h2>Sådan laver du en god kompost</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ2lE4ISmqNupjhYRBZD7A9kWf7Yob9Ld7Q&s" alt="Placeholder for Sådan kan du hjælpe billede" class="info-box-img">
+        <p>En god kompost er en fantastisk måde at genbruge madrester og organisk affald. Lær, hvordan du kan omdanne affald til næring for haven.</p>
+        <button>Læs mere</button>
+    </div>
+</section>
+
 </body>
 </html>

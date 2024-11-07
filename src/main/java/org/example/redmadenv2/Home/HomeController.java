@@ -48,7 +48,6 @@ public class HomeController {
         return "redirect:/org-site";  // Redirect to the organisation site after login
     }
 
-    // Handle GET request to show the organisation site
     @GetMapping("/org-site")
     public String orgSite() {
         return "org-site";  // Render the org-site.html page
@@ -57,4 +56,13 @@ public class HomeController {
     public String createProduct() {
         return "createProduct"; // This renders createProduct.html
     }
-}
+    @GetMapping("/handleDonation")
+    public String handleDonation() {
+        return "handleDonation";
+        }
+    @GetMapping("/readAboutFoodWaste")
+    public String readAboutFoodWaste() {
+        return "readAboutFoodWaste";
+    }
+    }
+
