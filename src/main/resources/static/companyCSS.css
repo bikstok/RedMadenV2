@@ -100,6 +100,7 @@ body {
     top: 20px;  /* Adjust top position */
     left: 20px;  /* Adjust left position */
     z-index: 10;  /* Ensures the button stays above other content */
+    text-decoration: none;
 }
 
 .logud-btn:hover {

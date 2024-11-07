@@ -2,10 +2,56 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Organisationens Hovedside - Rediger tekst</title>
-    <link rel="stylesheet" href="orgStyle.css">
+    <title>Danmark mod Madspild - Administrativ Dashboard</title>
+    <link rel="stylesheet" href="organisationCSS.css">
 </head>
 <body>
-<h1> HEJ ORGANISATION </h1>
+<!-- Log ud knap, øverste venstre hjørne -->
+<a href="/">
+    <button class="logud-btn">Log ud</button>
+</a>
+
+<!-- Overskrift, Danmark mod madspild -->
+<header class="header">
+    <h1>Danmark mod Madspild - Dashboard</h1>
+    <p>Administrer kampagner, ressourcer og partnerskaber</p>
+</header>
+
+<!-- Main Container -->
+<div class="dashboard-container">
+    <!-- Panel for de forskellige funktioner -->
+    <div class="admin-panel">
+        <!-- Kampagner eller Events sektion -->
+        <div class="panel-box">
+            <h2>Kampagner og Events</h2>
+            <p>Opret, administrer og følg dine kampagner.</p>
+            <button onclick="location.href='opretKampagne.html'" class="panel-button">Administrer Kampagner</button>
+        </div>
+
+        <!-- Ressourcer sektion -->
+        <div class="panel-box">
+            <h2>Madspildsinformation</h2>
+            <p>Del viden og materialer om madspild.</p>
+            <button class="panel-button">Administrer Ressourcer</button>
+        </div>
+
+        <!-- Donationer sektion -->
+        <a href="handleDonation">
+        <div class="panel-box">
+            <h2>Oversigt af Donationer</h2>
+            <p>Få overblik over modtagne donationer.</p>
+            <button class="panel-button">Se Donationer</button>
+        </div>
+        </a>
+
+        <!-- Partnerstyring sektion -->
+        <div class="panel-box">
+            <h2>Partnerstyring</h2>
+            <p>Administrer dine samarbejdspartnere og netværk.</p>
+            <button class="panel-button">Administrer Partnere</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

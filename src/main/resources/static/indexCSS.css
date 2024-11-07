@@ -1,214 +1,180 @@
+/* Generel styling */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
 
-/* Add a black background color to the top navigation */
+/* Navigation styling */
 .topnav {
-    background-color: #333;
+    background-color: #2f855a;
     overflow: hidden;
+    padding: 10px;
     width: 100%;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-    float: right;
+    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    font-weight: bold;
+    font-size: 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
-/* Special styling for the buttons you want on the left */
-.topnav a.left-button {
-    float: left; /* Float the left-button class to the left */
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #2f855a;
-    color: black;
-}
-
-/* Add a color to the active/current link */
 .topnav a.active {
     background-color: #04AA6D;
     color: white;
 }
 
+/* Login sat til højre i topnavn bar og har en hover effekt*/
+.topnav a[href="/login"] {
+    float: right;
+}
+.topnav a[href="/login"]:hover {
+    color: black;
+}
 
-/* Container to hold the sidebar and main content */
+/*Læs om madspild sat til højre i topnav bar og har en hover effekt */
+.topnav a[href="readAboutFoodWaste"]{
+    float:right;
+}
+.topnav a[href="readAboutFoodWaste"]:hover {
+    color: black;
+
+}
+/* Container styling */
 .container {
     display: flex;
+    margin-left: 0; /* Sørger for, at indhold starter helt til venstre */
+    gap: 20px;
+    max-width: 1200px;
 }
 
-/* Sidebar styling */
+/* Sidebar styling - placeret helt til venstre med grå baggrund */
 .sidebar {
-    outline: 2px solid #333;
     width: 250px;
-    background-color: #52A552;
+    background-color: grey;
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    overflow-y: auto
 }
 
-/* Style for labels and checkboxes in the sidebar */
-.sidebar label {
-    display: block;
-    margin-bottom: 8px;
+/* Infobokse sektion */
+.info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
 
-/* Style for the text field */
-.preferences-box input[type="text"] {
-    width: 100%; /* Full width of the preferences box */
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Container for label and text input */
-.search-container {
+/* Søgefelt og dropdown-menu */
+.search-bar {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between the label and text field */
-    margin-bottom: 15px; /* Space after the search container */
-}
-
-/* Label styling */
-.search-container label {
-    white-space: nowrap; /* Prevents label text from wrapping */
-}
-
-/* Text field styling */
-.search-container input[type="text"] {
-    flex-grow: 1; /* Makes the input expand to fill available space */
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Slider container */
-.slider-container {
-    position: relative;
+    gap: 10px;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 
-/* Styling for the value above the slider */
-.slider-value-container {
-    position: absolute;
-    top: 0px; /* Adjust position above the slider */
-    left: 50%;
-    transform: translateX(-50%); /* Center the value */
+.search-bar input[type="text"] {
+    width: 70%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Infobokse - smal størrelse */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Lidt ekstra mellemrum mellem boksene */
+}
+
+.info-box {
+    background-color: #f9f9f9;
+    padding: 20px; /* Mere padding for at gøre indholdet "luftigere" */
+    width: 180px; /* Øg bredde en smule */
+    border-radius: 10px; /* Blødere hjørner for et mere moderne udseende */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Dyb skygge for at fremhæve boksene */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Lidt transition for en glat effekt */
+}
+
+.info-box:hover {
+    transform: scale(1.03); /* En let forstørrelse ved hover for interaktivt udseende */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Forstærket skygge ved hover */
+}
+
+/* Header-boks styling */
+.header-box {
+    display: flex;
+    flex-direction: column; /* Arrangerer elementerne lodret */
+    align-items: center; /* Centerer indholdet horisontalt */
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.store-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.stock-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px; /* Lidt afstand mellem butiksnavn og lagerinfo */
+}
+
+/* Billede styling i bokse */
+.info-box-img {
+    width: 120px; /* Øg bredde for billeder */
+    height: 120px; /* Øg højde for billeder */
+    object-fit: cover; /* Sørger for at billedet dækker hele pladsen */
+    border-radius: 8px; /* Bløde kanter */
+    margin: 0 auto 12px auto; /* Centerer billedet og giver afstand nedenunder */
+    display: block;
+}
+
+.info-box h2 {
+    font-size: 20px; /* En lidt større skriftstørrelse */
+    color: #2f855a;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 18px; /* Gør prisen mere fremtrædende */
+    color: #2f855a;
     font-weight: bold;
 }
 
-/* Style the slider value */
-#distanceValue {
-    font-size: 14px; /* Adjust font size as needed */
-}
-
-/* Style the slider */
-input[type="range"] {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-/* */
-/* */
-/* */
-/* */
-/* *//* Main wrapper for centering everything on the page */
-.center-wrapper {
-    display: flex;
-    pointer-events: none;
-    flex-direction: column; /* Stack children vertically (input and boxes) */
-    justify-content: center; /* Center everything vertically */
-    align-items: center; /* Center everything horizontally */
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    transform: translate(8.097897503285151116951379763469%, -127%);
-}
-
-.center-box-wrapper {
-    display: flex;
-    pointer-events: none;
-    flex-direction: column; /* Stack children vertically (input and boxes) */
-    justify-content: center; /* Center everything vertically */
-    align-items: center; /* Center everything horizontally */
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    transform: translate(8.097897503285151116951379763469%, -185%);
-}
-
-/* Container to align dropdown and text field horizontally */
-.input-container {
-    pointer-events: auto;
-    display: flex;
-    align-items: center; /* Center vertically within the container */
-    margin-bottom: 20px; /* Space between input field and boxes */
-}
-
-/* Style for the dropdown */
-.dropdown {
-    pointer-events: auto;
-    padding: 10px;
+.original-price {
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px; /* Adds space between the dropdown and the text field */
+    color: #555;
+    text-decoration: line-through;
+    margin-left: 5px;
 }
 
-/* Style for the text field */
-.center-text-field {
-    pointer-events: auto;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-/* Box container for centering boxes under the text field */
-.box-container {
-    display: flex;
-    pointer-events: none;
-    justify-content: center; /* Center the boxes horizontally */
-    align-items: center; /* Center the boxes vertically (if needed) */
-    margin-top: 20px; /* Space between the input field and the boxes */
-    flex-wrap: wrap; /* Allow the boxes to wrap to the next line if necessary */
-}
-
-/* Individual box styling */
-.box {
-    pointer-events: none;
-    width: 225px; /* Fixed width for the boxes */
-    height: 225px; /* Fixed height for the boxes */
-    margin: 10px; /* Space between the boxes */
-    background-color: #52A552;
-    color: white;
-    border-color: #ccc;
-    border-width: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center the text inside each box */
-    font-size: 16px;
-    border-radius: 8px; /* Rounded corners for the boxes */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
-
-.image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 95px;
-}
-
-.box h2 {
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 10px;
+.expiration {
+    font-size: 13px;
+    color: #d9534f;
+    margin-top: 8px;
 }
