@@ -3,14 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Red Maden</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="indexCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<h1>Red Maden</h1>
-<a href="/login">
-    <button class="btn-login">Login</button>
-</a>
+<div class="topnav">
+    <a class="left-button" href="#menu">Menu</a>
+    <a class="left-button" href="#red_maden">Red Maden</a>
+    <a href="/login">Login</a>
+    <a href="#read_madspild">Læs om madspild</a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Præferencer</h2>
+        <form>
+            <div class="search-container">
+                <label for="search">Adresse:</label>
+                <input type="text" id="search" name="search">
+            </div>
+
+            <div class="slider-container">
+                <label for="distance">Afstand (km):</label>
+                <div class="slider-value-container">
+                    <span id="distanceValue">1</span> km
+                </div>
+                <input type="range" id="distance" name="distance" min="0" max="25" value="1" oninput="distanceValue.textContent = this.value">
+            </div>
+
+            <h3>Vælg butikker</h3>
+            <label><input type="checkbox" name="category" value="Rema"> Rema 1000</label><br>
+            <label><input type="checkbox" name="category" value="Netto"> Netto</label><br>
+            <label><input type="checkbox" name="category" value="Meny"> Meny</label><br>
+            <label><input type="checkbox" name="category" value="Føtex"> Føtex</label><br>
+            <label><input type="checkbox" name="category" value="Lidl"> Lidl</label><br>
+            <label><input type="checkbox" name="category" value="Aldi"> Aldi</label><br>
+            <label><input type="checkbox" name="category" value="Irma"> Irma</label><br>
+            <label><input type="checkbox" name="category" value="Spar"> Spar</label><br>
+            <label><input type="checkbox" name="category" value="Superbrugsen"> Superbrugsen</label><br>
+            <label><input type="checkbox" name="category" value="Coop365"> Coop365</label><br>
+        </form>
+    </div>
+
+</div>
 <body>
-Hello hej
+<div class="center-wrapper">
+    <!-- Dropdown menu on the left of the text field -->
+    <div class="input-container">
+        <select class="dropdown">
+            <option value="" disabled selected>Vælg kategori</option> <!-- Placeholder option -->
+            <option value="option1">Mejeri</option>
+            <option value="option2">Kød og pålæg</option>
+            <option value="option3">Frugt og grønt</option>
+        </select>
+        <input type="text" class="center-text-field" placeholder="Søg efter datovare">
+    </div>
+</div>
+<div class="center-box-wrapper">
+    <!-- Container for centered boxes under the search bar -->
+    <div class="box-container">
+        <div class="box">
+            <img src="https://www.stryhnsleverpostej.dk/wp-content/uploads/2024/07/Stryhns-Fransk-postej-400g-scaled.jpg" alt="Image 1" class="image">
+            <h2>Leverpostej</h2>
+        </div>
+
+        <div class="box">
+            <img src="https://www.stryhnsleverpostej.dk/wp-content/uploads/2024/07/Stryhns-Fransk-postej-400g-scaled.jpg" alt="Image 2" class="image">
+        </div>
+
+        <div class="box">
+            <img src="https://www.stryhnsleverpostej.dk/wp-content/uploads/2024/07/Stryhns-Fransk-postej-400g-scaled.jpg" alt="Image 3" class="image">
+        </div>
+
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+    <div class="box-container">
+        <div class="box">Box 6</div>
+        <div class="box">Box 7</div>
+        <div class="box">Box 8</div>
+        <div class="box">Box 9</div>
+        <div class="box">Box 10</div>
+    </div>
+    <div class="box-container">
+        <div class="box">Box 11</div>
+        <div class="box">Box 12</div>
+        <div class="box">Box 13</div>
+        <div class="box">Box 14</div>
+        <div class="box">Box 15</div>
+    </div>
+</div>
 </body>
+
 </html>

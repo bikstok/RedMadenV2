@@ -1,0 +1,214 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Special styling for the buttons you want on the left */
+.topnav a.left-button {
+    float: left; /* Float the left-button class to the left */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #2f855a;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Container to hold the sidebar and main content */
+.container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    outline: 2px solid #333;
+    width: 250px;
+    background-color: #52A552;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels and checkboxes in the sidebar */
+.sidebar label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Style for the text field */
+.preferences-box input[type="text"] {
+    width: 100%; /* Full width of the preferences box */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Container for label and text input */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the label and text field */
+    margin-bottom: 15px; /* Space after the search container */
+}
+
+/* Label styling */
+.search-container label {
+    white-space: nowrap; /* Prevents label text from wrapping */
+}
+
+/* Text field styling */
+.search-container input[type="text"] {
+    flex-grow: 1; /* Makes the input expand to fill available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Slider container */
+.slider-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Styling for the value above the slider */
+.slider-value-container {
+    position: absolute;
+    top: 0px; /* Adjust position above the slider */
+    left: 50%;
+    transform: translateX(-50%); /* Center the value */
+    font-weight: bold;
+}
+
+/* Style the slider value */
+#distanceValue {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Style the slider */
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* */
+/* */
+/* */
+/* */
+/* *//* Main wrapper for centering everything on the page */
+.center-wrapper {
+    display: flex;
+    pointer-events: none;
+    flex-direction: column; /* Stack children vertically (input and boxes) */
+    justify-content: center; /* Center everything vertically */
+    align-items: center; /* Center everything horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    transform: translate(8.097897503285151116951379763469%, -127%);
+}
+
+.center-box-wrapper {
+    display: flex;
+    pointer-events: none;
+    flex-direction: column; /* Stack children vertically (input and boxes) */
+    justify-content: center; /* Center everything vertically */
+    align-items: center; /* Center everything horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    transform: translate(8.097897503285151116951379763469%, -185%);
+}
+
+/* Container to align dropdown and text field horizontally */
+.input-container {
+    pointer-events: auto;
+    display: flex;
+    align-items: center; /* Center vertically within the container */
+    margin-bottom: 20px; /* Space between input field and boxes */
+}
+
+/* Style for the dropdown */
+.dropdown {
+    pointer-events: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Adds space between the dropdown and the text field */
+}
+
+/* Style for the text field */
+.center-text-field {
+    pointer-events: auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Box container for centering boxes under the text field */
+.box-container {
+    display: flex;
+    pointer-events: none;
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically (if needed) */
+    margin-top: 20px; /* Space between the input field and the boxes */
+    flex-wrap: wrap; /* Allow the boxes to wrap to the next line if necessary */
+}
+
+/* Individual box styling */
+.box {
+    pointer-events: none;
+    width: 225px; /* Fixed width for the boxes */
+    height: 225px; /* Fixed height for the boxes */
+    margin: 10px; /* Space between the boxes */
+    background-color: #52A552;
+    color: white;
+    border-color: #ccc;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text inside each box */
+    font-size: 16px;
+    border-radius: 8px; /* Rounded corners for the boxes */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 95px;
+}
+
+.box h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
